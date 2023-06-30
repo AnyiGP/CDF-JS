@@ -37,7 +37,7 @@ describe('BinarioADecimal',()=>{
 
 describe('Fibonacci',()=>{
     it('Deberia realizar secuencia fibonacci', ()=>{
-        expect(Fibonacci(10)).toBe(55)
+        expect(Fibonacci(10)).toEqual(55) //
         expect(Fibonacci(5)).toEqual(5)
         expect(Fibonacci(15)).toEqual(610)
         expect(Fibonacci(20)).toEqual(6765)
