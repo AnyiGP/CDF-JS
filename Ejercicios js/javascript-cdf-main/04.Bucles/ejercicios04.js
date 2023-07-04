@@ -22,11 +22,11 @@ function primerDivisible(divisor, dividendo) {
   // Encuentra el primer número divisible por 'num' a partir de un número dado utilizando un bucle while
   // Tu código:👇
   // cual es el primerNumeroQueDivide a num iniciiando desde numeroInicial
-  // let numero = divisor
-  // while (dividendo % divisor !== 0) {
-  //   numero++;
-  // }
-  // return numero;
+  let numero = divisor
+  while (dividendo % numero !== 0) {
+    numero++;
+   }
+   return numero;
 }
 
 function encuentraX(x) {
