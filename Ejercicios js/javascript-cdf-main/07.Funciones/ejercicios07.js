@@ -69,28 +69,91 @@ const arrayDeStrings = (str) => {
 // IMPORTANTE -> la funcion debe llamarse 'stringInverso'
 // Tu código:
 
-const stringInverso = () => {};
+const stringInverso = () => {
+  // Divide el string en un arreglo de palabras separadas por espacio
+  var palabras = str.split(' ');
+
+  // Invierte el orden de las palabras en el arreglo
+  var palabrasInversas = palabras.reverse();
+
+  // Une las palabras invertidas en un nuevo string separadas por espacio
+  var resultado = palabrasInversas.join(' ');
+
+  // Devuelve el string resultante
+  return resultado;
+};
 
 /**********************************************************************************/
 // Crea una función que reciba un array de objetos con propiedades "nombre" y "edad" y devuelva el nombre de la persona más joven.
 // IMPORTANTE -> la funcion debe llamarse 'personaMásJoven'
 // Tu código:
+var personas = [
+  { nombre: "Juan", edad: 25 },
+  { nombre: "María", edad: 18 },
+  { nombre: "Carlos", edad: 21 }
+];
 
-const personaMásJoven = () => {};
+const personaMásJoven = () => {
+  if (personas.length === 0) {
+    return "No hay personas en el array";
+  }
+
+  var personaMásJoven = personas[0];
+
+  for (var i = 1; i < personas.length; i++) {
+    if (personas[i].edad < personaMásJoven.edad) {
+      personaMásJoven = personas[i];
+    }
+  }
+
+  return personaMásJoven.nombre;
+
+};
 
 /**********************************************************************************/
 // Crea una función que reciba una cadena de texto y devuelva un objeto con la cantidad de veces que aparece cada letra en la cadena.
 // IMPORTANTE -> la funcion debe llamarse 'contadorDeLetras'
 // Tu código:
 
-const contadorDeLetras = () => {};
+const contadorDeLetras = () => {
+  var contador = {};
+
+  // Recorre cada caracter de la cadena
+  for (var i = 0; i < cadena.length; i++) {
+    var letra = cadena[i];
+
+    // Verifica si la letra ya existe en el contador
+    if (contador[letra]) {
+      contador[letra]++;
+    } else {
+      contador[letra] = 1;
+    }
+  }
+
+  return contador;
+}
+
 
 /**********************************************************************************/
 // Crea una función que reciba un array de objetos que tiene como propiedades "nombre" y "sueldo" y devuelva el objeto con el sueldo más alto.
 // IMPORTANTE -> la funcion debe llamarse 'sueldoMasAlto'
 // Tu código:
 
-const sueldoMasAlto = () => {};
+const sueldoMasAlto = () => {
+  if (objetos.length === 0) {
+    return "No hay objetos en el array";
+  }
+
+  var sueldoMasAlto = objetos[0];
+
+  for (var i = 1; i < objetos.length; i++) {
+    if (objetos[i].sueldo > sueldoMasAlto.sueldo) {
+      sueldoMasAlto = objetos[i];
+    }
+  }
+
+  return sueldoMasAlto;
+};
 
 /**********************************************************************************/
 // Crea una función que reciba un array de objetos que tiene como propiedades propiedades "nombre" y "nota"
@@ -98,7 +161,17 @@ const sueldoMasAlto = () => {};
 // IMPORTANTE -> la funcion debe llamarse 'aprobados'
 // Tu código:
 
-const aprobados = () => {};
+const aprobados = () => {
+  var aprobados = [];
+
+  for (var i = 0; i < estudiantes.length; i++) {
+    if (estudiantes[i].nota >= 80) {
+      aprobados.push(estudiantes[i].nombre);
+    }
+  }
+
+  return aprobados;
+};
 
 /**********************************************************************************/
 
