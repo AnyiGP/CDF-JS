@@ -70,8 +70,8 @@ function ataquePC() {
   } else {
     ataquePCRandom = "tijera";
   }
-//   combat();
-  console.log(combat())
+  combat();
+//  console.log(combat())
 }
 
 // En esta funcion se realiza la lógica del juego. Es decir:
@@ -81,7 +81,7 @@ function ataquePC() {
 
 function combat() {
   // Tu código:
-  if (randomAttack === ataquePlayer) {
+  if (ataquePCRandom === ataquePlayer) {
     msjResult("Empate");
   } else if (
     (ataquePlayer === "papel" && ataquePCRandom === "piedra") ||
@@ -90,9 +90,12 @@ function combat() {
   ) {
     msjResult("Ganaste");
     pointsEnemy--;
+    spanVidasEnemy.innerHTML = pointEnemy
   } else {
     msjResult("Perdiste");
     pointsPlayer--;
+    
+    spanVidasPlayer.innerHTML = pointPlayer
   }
   revisarvida();
 }
@@ -108,8 +111,14 @@ function revisarvida() {
     alert("Perdiste la partida :(");
   } else if (pointsEnemy === 0) {
     alert("Ganaste la partida :D");
-  }
-}
+  } 
+  // else if (pointsEnemy === 0 || pointPlayer === 0) {
+    //bloquear()
+  //  btnPaper.disabled = true
+    //    btnScissors.disabled = true
+    // btnRock.disabled = true
+// sectionRinicio.calssList.remove("show")
+ }
 
 ///////////////////////////////////////////////////////////////////////////////////
 // NO MODIFICAR NADA A PARTIR DE ACÁ.                                           //
