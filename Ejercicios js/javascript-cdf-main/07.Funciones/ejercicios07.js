@@ -14,8 +14,19 @@ bienvenida("Angeles", "Godoy");
 // IMPORTANTE -> la funcion debe llamarse 'calc'
 // Tu código:
 const calc = (num1, operador, num2) => {
-  let resultado = `${num1} ${operador} ${num2}`;
-  return resultado;
+  // let resultado = `${num1}${operador}${num2}`;
+  // return resultado;
+  // console.log(resultado)
+  switch (operador) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+  }
 };
 
 calc(1, "+", 2);
@@ -57,11 +68,19 @@ temp(10, 5, 90);
 // IMPORTANTE -> la funcion debe llamarse 'arrayDeStrings'
 // Tu código:
 
-const arrayDeStrings = (str) => {
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        
+const arrayDeStrings = (arrStr) => {
+  let nuevoArray = [];
+
+  for (let i = 0; i < arrStr.length; i++) {
+    const str = arrStr[i];
+    if (str.length >= 5) {
+      nuevoArray.push(str);
     }
+  }
+  return nuevoArray;
+
+  //EN UNA SOLA LINEA DE CODIGO
+  // return arrStr.filter((str) => str.length >= 5);
 };
 
 /**********************************************************************************/
@@ -69,45 +88,45 @@ const arrayDeStrings = (str) => {
 // IMPORTANTE -> la funcion debe llamarse 'stringInverso'
 // Tu código:
 
-const stringInverso = () => {
-  // Divide el string en un arreglo de palabras separadas por espacio
-  var palabras = str.split(' ');
+const stringInverso = (strInverso) => {
+  // let strInverso = []
+  // let palabras = strInverso.split(" ");
+  // console.log(palabras)
 
-  // Invierte el orden de las palabras en el arreglo
-  var palabrasInversas = palabras.reverse();
+  // let palabrasInversas = palabras.reverse();
 
-  // Une las palabras invertidas en un nuevo string separadas por espacio
-  var resultado = palabrasInversas.join(' ');
+  // console.log(palabrasInversas)
 
-  // Devuelve el string resultante
-  return resultado;
+  // return palabrasInversas.join(" ");
+  
+  //////////////////////
+  const palabras = strInverso.split(' ');
+  const palabrasInversas = [];
+
+  for (let i = palabras.length - 1; i >= 0; i--) {
+    palabrasInversas.push(palabras[i]);
+  }
+
+  console.log(palabrasInversas)
+  return palabrasInversas.join(' ');
+  
+
 };
 
 /**********************************************************************************/
 // Crea una función que reciba un array de objetos con propiedades "nombre" y "edad" y devuelva el nombre de la persona más joven.
 // IMPORTANTE -> la funcion debe llamarse 'personaMásJoven'
 // Tu código:
-var personas = [
-  { nombre: "Juan", edad: 25 },
-  { nombre: "María", edad: 18 },
-  { nombre: "Carlos", edad: 21 }
-];
+const personaMásJoven = (personas) => {
+  let personaMásJoven = personas[0];
 
-const personaMásJoven = () => {
-  if (personas.length === 0) {
-    return "No hay personas en el array";
-  }
-
-  var personaMásJoven = personas[0];
-
-  for (var i = 1; i < personas.length; i++) {
+  for (let i = 1; i < personas.length; i++) {
     if (personas[i].edad < personaMásJoven.edad) {
       personaMásJoven = personas[i];
     }
   }
 
   return personaMásJoven.nombre;
-
 };
 
 /**********************************************************************************/
@@ -115,12 +134,12 @@ const personaMásJoven = () => {
 // IMPORTANTE -> la funcion debe llamarse 'contadorDeLetras'
 // Tu código:
 
-const contadorDeLetras = () => {
-  var contador = {};
+const contadorDeLetras = (cadena) => {
+  let contador = {};
 
   // Recorre cada caracter de la cadena
-  for (var i = 0; i < cadena.length; i++) {
-    var letra = cadena[i];
+  for (let i = 0; i < cadena.length; i++) {
+    let letra = cadena[i];
 
     // Verifica si la letra ya existe en el contador
     if (contador[letra]) {
@@ -131,22 +150,17 @@ const contadorDeLetras = () => {
   }
 
   return contador;
-}
-
+};
 
 /**********************************************************************************/
 // Crea una función que reciba un array de objetos que tiene como propiedades "nombre" y "sueldo" y devuelva el objeto con el sueldo más alto.
 // IMPORTANTE -> la funcion debe llamarse 'sueldoMasAlto'
 // Tu código:
 
-const sueldoMasAlto = () => {
-  if (objetos.length === 0) {
-    return "No hay objetos en el array";
-  }
+const sueldoMasAlto = (objetos) => {
+  let sueldoMasAlto = objetos[0];
 
-  var sueldoMasAlto = objetos[0];
-
-  for (var i = 1; i < objetos.length; i++) {
+  for (let i = 1; i < objetos.length; i++) {
     if (objetos[i].sueldo > sueldoMasAlto.sueldo) {
       sueldoMasAlto = objetos[i];
     }
@@ -161,10 +175,10 @@ const sueldoMasAlto = () => {
 // IMPORTANTE -> la funcion debe llamarse 'aprobados'
 // Tu código:
 
-const aprobados = () => {
-  var aprobados = [];
+const aprobados = (estudiantes) => {
+  let aprobados = [];
 
-  for (var i = 0; i < estudiantes.length; i++) {
+  for (let i = 0; i < estudiantes.length; i++) {
     if (estudiantes[i].nota >= 80) {
       aprobados.push(estudiantes[i].nombre);
     }
