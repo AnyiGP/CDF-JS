@@ -1,0 +1,765 @@
+* {
+    margin: auto;
+    padding: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    box-shadow: 1px 5px 10px -3px #aaa;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navegador {
+    width: 50%;
+    height: 4rem;
+    margin: 1em;
+    font-size: 1em;
+    display: flex;
+  }
+  
+  .navegador p {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .nav1,
+  .nav2,
+  .nav3 {
+    width: 10vw;
+    height: 0.5em;
+    margin: 1em;
+    padding: 1em;
+    color: gray;
+  }
+  
+  .nav1:hover {
+    color: #27193c;
+  }
+  
+  .nav2:hover {
+    color: #27193c;
+  }
+  
+  .nav3:hover {
+    color: #27193c;
+  }
+  
+  .nav4 {
+    width: 10vw;
+    height: 0.5em;
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    background-color: #593c72;
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav4:hover {
+    background-color: #8840c7;
+  }
+  
+  .nav4:active {
+    box-shadow: 0em 0em 0.5em 0em #66abd9;
+  }
+  /***************************
+  MAIN
+  ****************************/
+  
+  main {
+    background-color: whitesmoke;
+  }
+  
+  .contenedor {
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: white;
+    box-shadow: inset 1px 10px 10px -3px rgba(170, 170, 170, 0.371);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Hola h1 {
+    margin-top: 1em;
+    color: #27193c;
+    font-size: 1em;
+    font-weight: 800;
+  }
+  
+  .AngiGP {
+    margin-top: 0.5em;
+    color: #66abd9;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  
+  section h3 {
+    margin-top: 2em;
+    color: rgb(21, 21, 73);
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  .boton {
+    width: 10em;
+    height: 0.5em;
+    margin: 0;
+    margin-top: 2em;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #593c72;
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton:hover {
+    background-color: #8840c7;
+  }
+  
+  .boton:active {
+    box-shadow: 0em 0em 0.5em 0em #66abd9;
+  }
+  
+  .foto1 {
+    width: 20em;
+    display: flex;
+  }
+  
+  /*************************************
+  CONOCIMIENTOS
+  ***************************************/
+  
+  .contenedor2 {
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+  
+  .Conocimientos h1,
+  .Proyectos h1 {
+    font-size: 3em;
+    font-weight: 850;
+    color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Conocimientos p,
+  .Proyectos p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .programas {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 18vw;
+    height: 16vw;
+    margin: 1em;
+    padding: 1em;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logo:hover {
+    border: 1px solid #593c72;
+    color: #593c72;
+  }
+  
+  .logo:active {
+    box-shadow: 0em 0em 1em 0em #66abd9;
+  }
+  
+  .logo img {
+    width: 40%;
+  }
+  
+  .logo h2 {
+    font-size: 1em;
+  }
+  
+  /**************************************
+  CITA
+  ****************************************/
+  
+  .cita {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #593c72;
+  }
+  
+  .cita p {
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-size: 10em;
+    font-weight: 700;
+    margin-bottom: -0.5em;
+  }
+  
+  blockquote {
+    padding: 2em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: oblique;
+  }
+  
+  .cita h2 {
+    padding: 2em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /****************************************
+  PROYECTOS
+  *****************************************/
+  
+  .Proyectos {
+    width: 100%;
+    height: auto;
+    padding-top: 7rem;
+    background-color: whitesmoke;
+  }
+  
+  .contenedor3 {
+    width: 80%;
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .recuadro {
+    width: 18vw;
+    height: 16vw;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .recuadro:hover {
+    border: 1px solid #8840c7;
+    color: #8840c7;
+  }
+  
+  .recuadro:active {
+    box-shadow: 0em 0em 1em 0em #66abd9;
+  }
+  
+  .contenedor3 a {
+    color: darkslategray;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /****************************
+  CONTACTO
+  **********************************/
+  .contactame_escribime {
+    width: 100%;
+    background-color: gainsboro;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .contacto {
+    width: 90%;
+    height: auto;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .ContactameEscribime {
+    width: 100%;
+    padding-top: 3rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactame {
+    width: 60%;
+    margin: 3em 0em 3em 3em;
+  }
+  
+  .contactame h1 {
+    font-size: 3em;
+    font-weight: 850;
+    padding-left: 1rem;
+    color: cornflowerblue;
+  }
+  
+  .contactame p {
+    width: 80%;
+    margin: 1rem;
+    color: gray;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  .enlaces_contactos {
+    width: auto;
+    padding-left: 1em;
+  }
+  
+  .enlace {
+    font-size: 1em;
+    color: gray;
+  }
+  
+  .enlace i {
+    margin: 0.5em;
+    padding: 0.5em;
+    color: #27193c;
+    background-color: #8fdbd1;
+    border-radius: 10em;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3ms;
+  }
+  
+  .enlace:hover,
+  .enlace:hover i {
+    color: #ea5f5c;
+  }
+  
+  .enlace:active {
+    width: auto;
+    border-radius: 3em;
+    padding: 1em;
+    box-shadow: 0em 0em 1em 0em #8fdbd1;
+  }
+  
+  /*********formulario**********/
+  
+  .ContenedorEscribime {
+    margin: 3em;
+    font-size: 1em;
+    color: gray;
+  }
+  
+  .ContenedorEscribime h1 {
+    font-size: 3em;
+    font-weight: 850;
+    color: cornflowerblue;
+    margin-left: -1rem;
+  }
+  
+  .formulario {
+    margin-left: -3rem;
+  }
+  
+  #Nombre,
+  #Apellido {
+    font-size: 1em;
+    color: gray;
+    box-sizing: content-box;
+    width: 100%;
+    height: 8vh;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    display: flex;
+    padding-left: 1em;
+  }
+  
+  .Nombre,
+  .Apellido,
+  .E-Mail {
+    margin: 1em;
+  }
+  
+  #E-Mail {
+    font-size: 1em;
+    color: gray;
+    box-sizing: content-box;
+    width: 100%;
+    height: 8vh;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    padding-left: 1em;
+  }
+  
+  #Mensaje {
+    margin: 1em;
+    font-size: 1em;
+    color: gray;
+    box-sizing: content-box;
+    width: 100%;
+    height: 8vh;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    padding-left: 1em;
+    /*ALGO ME ESTA CENTRANDO VERTICALMENTE EL TEXTO*/
+  }
+  
+  .Mensaje {
+    margin: 1em;
+  }
+  
+  div input {
+    margin: 1em;
+  }
+  
+  div label {
+    margin: 1em;
+  }
+  
+  .NombreApellido {
+    display: flex;
+  }
+  
+  .enviar {
+    width: 5em;
+    height: 0.5em;
+    margin-left: -1em;
+    padding: 1em;
+    font-weight: 600;
+    color: white;
+    background-color: #27193c;
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3ms;
+  }
+  
+  .enviar:hover {
+    background-color: #8840c7;
+    box-shadow: 1px 5px 5px 0px gainsboro;
+  }
+  
+  /*************************
+  FOOTER
+  ***************************/
+  
+  footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #593c72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .enlaces {
+    margin: 1em;
+    display: flex;
+  }
+  
+  .enlaces p {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .enlaces a {
+    margin: 1em;
+    color: white;
+    display: flex;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3ms;
+  }
+  
+  .enlaces a:hover {
+    color: #ea5f5c;
+  }
+  
+  .iconos i {
+    margin: 0.5em;
+    padding: 0.5em;
+    color: #27193c;
+    background-color: #8fdbd1;
+    border-radius: 10em;
+  }
+  
+  .iconos i:hover {
+    color: #ea5f5c;
+    border: 1px solid #ea5f5c;
+    background-color: #593c72;
+  }
+  
+  .mensaje_final {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+  }
+  
+  .mensaje_final span {
+    font-size: 2em;
+    color: #ea5f5c;
+  }
+  
+  /*****************************
+  **************************
+  RESPONSIVE*********************/
+  
+  @media screen and (max-width: 480px) {
+    .navegador {
+      display: none;
+    }
+  
+    .contenedor {
+      padding-top: 2em;
+    }
+  
+    .foto1 {
+      padding-top: 3em;
+      padding-bottom: 0em;
+    }
+  
+    .Conocimientos h1,
+    .Proyectos h1,
+    .contactame h1,
+    .ContenedorEscribime h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+  
+    .Conocimientos p {
+      width: 80%;
+    }
+  
+    .programas {
+      width: auto;
+      margin: 1rem;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      width: 20vh;
+      height: 18vh;
+      margin: 0.5rem;
+      padding: 0;
+    }
+  
+    .logo h2 {
+      font-size: 100%;
+    }
+  
+    .logo img {
+      width: 40%;
+    }
+  
+    .Proyectos p {
+      width: 80%;
+      padding-bottom: 0;
+    }
+  
+    .recuadro {
+      width: 90vw;
+      height: 70vw;
+    }
+  
+    .contenedor3 {
+      padding-top: 1em;
+      display: flex;
+      justify-content: column;
+    }
+  
+    .contactame p {
+      width: 130%;
+    }
+  
+    .contactame {
+      padding-left: 1rem;
+      margin-left: 1rem;
+    }
+  
+    .enlaces_contactos {
+      margin-left: 0;
+    }
+  
+    address {
+      width: max-content;
+    }
+  
+    .ContactameEscribime,
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .NombreApellido {
+      flex-direction: column;
+    }
+  
+    .enlaces {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 800px) {
+    .navegador {
+      width: auto;
+      margin: auto;
+      padding: auto;
+    }
+  
+    .nav4 {
+      width: max-content;
+    }
+  
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .Hola {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .foto1 {
+      margin-top: 4em;
+    }
+  
+    .Conocimientos p {
+      width: 80%;
+    }
+  
+    .programas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .logo {
+      width: 32vw;
+      height: 30vw;
+      margin: 2vw;
+      padding: 5vw;
+    }
+  
+    .contenedor3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .recuadro {
+      width: 36vw;
+      height: 34vw;
+      margin: 2vw;
+      padding: 5vw;
+    }
+  
+    .recuadro p {
+      font-size: 70%;
+    }
+  
+    .ContactameEscribime {
+      flex-direction: column;
+    }
+  
+    .contactame {
+      width: 100%;
+    }
+  
+    .enlaces_contactos {
+      width: 80%;
+      margin-left: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .enlaces_contactos li {
+      width: 50%;
+    }
+  
+    address {
+      width: max-content;
+    }
+  
+    .mail {
+      margin-left: -5rem;
+    }
+  
+    .ContenedorEscribime h1 {
+      margin-left: 1rem;
+      margin-bottom: 3rem;
+    }
+  }

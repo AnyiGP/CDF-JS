@@ -98,19 +98,18 @@ const stringInverso = (strInverso) => {
   // console.log(palabrasInversas)
 
   // return palabrasInversas.join(" ");
-  
+
   //////////////////////
-  const palabras = strInverso.split(' ');
+  const palabras = strInverso.split(" ");
   const palabrasInversas = [];
 
   for (let i = palabras.length - 1; i >= 0; i--) {
-    palabrasInversas.push(palabras[i]);
+    const palabraInversa = palabras[i].split("").reverse().join("")
+    palabrasInversas.push(palabraInversa);
   }
 
-  console.log(palabrasInversas)
-  return palabrasInversas.join(' ');
-  
-
+  //console.log(palabrasInversas);
+  return palabrasInversas.join(" ");
 };
 
 /**********************************************************************************/
