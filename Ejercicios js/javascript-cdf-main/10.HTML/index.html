@@ -1,179 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Mi Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul class="navegador">
-                <li><a class="nav1" href="#Inicio">Hola</a></li>
-                <li><a class="nav2" href="#Conocimientos">Conocimientos</a></li>
-                <li><a class="nav3" href="#Proyectos">Proyectos</a></li>
-                <li><a class="nav4" href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="navegador">
+          <li><a class="nav1" href="#Inicio">Hola</a></li>
+          <li><a class="nav2" href="#Conocimientos">Conocimientos</a></li>
+          <li><a class="nav3" href="#Proyectos">Proyectos</a></li>
+          <li><a class="nav4" href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="Inicio" class="contenedor">
-            <div class="Hola">
-                <h1>Mi Portfolio</h1>
-                <h2 id="AngiGP" class="AngiGP">Soy Angeles Godoy</h2>
-                <h3>Diseñadora, programadora, fotógrafa</h3>
-                <h4><a class="boton" href="#Proyectos">LO QUE HAGO</a></h4>
-            </div>
-            <aside>
-                <div class="foto1">
-                    <img src="images/foto.svg" alt="Imagen mujer programando en una PC" />
-                </div>
-            </aside>
-        </section>
+      <section id="Inicio" class="contenedor">
+        <div class="Hola">
+          <h1>Mi Portfolio</h1>
+          <h2 id="AngiGP" class="AngiGP">Soy Angeles Godoy</h2>
+          <h3>Diseñadora, programadora, fotógrafa</h3>
+          <h4><a class="boton" href="#Proyectos">LO QUE HAGO</a></h4>
+        </div>
+        <aside>
+          <div class="foto1">
+            <img
+              src="images/foto.svg"
+              alt="Imagen mujer programando en una PC"
+            />
+          </div>
+        </aside>
+      </section>
 
-        <section id="Sobre-mi" class="contenedor2" style="background-color: aliceblue;">
-            <div class="Conocimientos">
-                <h1>Sobre Mi</h1>
-                <p style="padding: 50px;">
-                    Como diseñadora, fotógrafa y programadora, poseo una pasión por la creatividad y la tecnología que
-                    me ha permitido fusionar estas disciplinas de manera excepcional. Con una sensibilidad artística
-                    aguda, me destaco en la creación de identidades visuales impactantes y piezas gráficas únicas que
-                    transmiten mensajes claros y cautivan al espectador. Mi experiencia como fotógrafa me ha brindado
-                    una perspectiva única en el arte de capturar momentos mágicos y contar historias a través de
-                    imágenes cautivadoras. Además, mi habilidad como programadora me ha permitido desarrollar soluciones
-                    tecnológicas a medida.</p>
+      <section
+        id="Sobre-mi"
+        class="contenedor2"
+        style="background-color: aliceblue"
+      >
+        <div class="Conocimientos">
+          <h1>Sobre Mi</h1>
+          <p style="padding: 50px">
+            Como diseñadora, fotógrafa y programadora, poseo una pasión por la
+            creatividad y la tecnología que me ha permitido fusionar estas
+            disciplinas de manera excepcional. Con una sensibilidad artística
+            aguda, me destaco en la creación de identidades visuales impactantes
+            y piezas gráficas únicas que transmiten mensajes claros y cautivan
+            al espectador. Mi experiencia como fotógrafa me ha brindado una
+            perspectiva única en el arte de capturar momentos mágicos y contar
+            historias a través de imágenes cautivadoras. Además, mi habilidad
+            como programadora me ha permitido desarrollar soluciones
+            tecnológicas a medida.
+          </p>
+        </div>
+      </section>
 
-            </div>
+      <section id="Conocimientos" class="contenedor2">
+        <div class="Conocimientos">
+          <h1>Mis habilidades</h1>
+          <p>
+            En esta sección se encuetran distintos lenguajes de programación que
+            manejo. Además programas de diseño vectorial, pixelar y de edición
+            de videos.
+          </p>
 
-        </section>
+          <div class="programas">
+            <!-- ********* -->
+            <table class="tablas">
+              <!-- La tabla con el atributo border para mostrar bordes visuales -->
+              <!-- Encabezado de la tabla -->
+              <thead>
+                <tr style="text-align: center">
+                  <th>Lenguaje</th>
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Filas de datos -->
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/html5.png"
+                      alt="logo html5"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>HTML5</td>
+                </tr>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/css3.png"
+                      alt="logo css3"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>css3</td>
+                </tr>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/sass.png"
+                      alt="logo sass"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>sass</td>
+                </tr>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/JavaScript.png"
+                      alt="logo JavaScript"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>JavaScript</td>
+                </tr>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/React.png"
+                      alt="logo react"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>react</td>
+                </tr>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/GIT.png"
+                      alt="logo git"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>git</td>
+                </tr>
 
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/ai.png"
+                      alt="logo adobe illustrator"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>illustrator</td>
+                </tr>
 
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/ps.png"
+                      alt="logo photoshop"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>photoshop</td>
+                </tr>
 
-        <section id="Conocimientos" class="contenedor2">
-            <div class="Conocimientos">
-                <h1>Mis habilidades</h1>
-                <p>
-                    En esta sección se encuetran distintos lenguajes de programación que manejo. Además programas de
-                    diseño vectorial,
-                    pixelar y de edición de videos.
-                </p>
+                <tr style="text-align: center">
+                  <td style="padding: 30px">
+                    <img
+                      src="images/pr.jpg"
+                      alt="logo premiere"
+                      style="height: 50px"
+                    />
+                  </td>
+                  <td>premiere</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- ********* -->
+          </div>
+        </div>
+      </section>
 
+      <section id="Proyectos" class="Proyectos">
+        <div>
+          <h1>Mis proyectos</h1>
+          <p>
+            En esta sección vas a encontrar algunos proyectos realizados durante
+            el cursado en ADA y otros de índole presonal
+          </p>
+        </div>
 
-                <div class="programas">
-                    <!-- ********* -->
-                    <table style="border: none; width: 80%; align-items: center;">
-                        <!-- La tabla con el atributo border para mostrar bordes visuales -->
-                        <!-- Encabezado de la tabla -->
-                        <thead>
-                            <tr style="text-align: center;">
-                                <th>Lenguaje</th>
-                                <th>Nombre</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Filas de datos -->
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/html5.png" alt="logo html5"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>HTML5</td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/css3.png" alt="logo css3"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>css3</td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/sass.png" alt="logo sass"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>sass</td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/JavaScript.png" alt="logo JavaScript"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>JavaScript</td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/React.png" alt="logo react"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>react</td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/GIT.png" alt="logo git"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>git</td>
-                            </tr>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/ai.png" alt="logo adobe illustrator"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>illustrator</td>
-                            </tr>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/ps.png" alt="logo photoshop"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>photoshop</td>
-                            </tr>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 30px;"><img src="images/pr.jpg" alt="logo premiere"
-                                        style="height: 50px;" />
-                                </td>
-                                <td>premiere</td>
-                            </tr>
+        <!-- <article class="contenedor3">
+          <div class="recuadro">
+            <a class="recuadro2" href="#Portfolio">
+              <img
+                src="images/vista previa portfolio.png"
+                alt="portafolio"
+                width="100%"
+              />
+              Portfolio</a
+            >
 
+            <p>Primer tabajo con html, css y js</p>
+            <p>Herramientas utilizadas</p>
 
-                        </tbody>
-                    </table>
-                    <!-- ********* -->
-
-
-                </div>
-            </div>
-        </section>
-
-        <section id="Proyectos" class="Proyectos">
             <div>
-                <h1>Mis proyectos</h1>
-                <p>
-                    En esta sección vas a encontrar algunos proyectos realizados durante
-                    el cursado en ADA y otros de índole presonal
-                </p>
+              <img src="images/html5.png" alt="logo html5" class="logos-card" />
+              <img
+                src="images/ps.png"
+                alt="logo photoshop"
+                class="logos-card"
+              />
+              <img
+                src="images/ps.png"
+                alt="logo photoshop"
+                class="logos-card"
+              />
             </div>
+          </div> -->
 
-            <article class="contenedor3">
-
-                <div class="recuadro">
-                    <a class="recuadro2" href="#Portfolio">
-                        <img src="images/vista previa portfolio.png" alt="portafolio" width="100%" />
-                        Portfolio</a>
-
-                    <p>Primer tabajo con html, css y js</p>
-                    <p>Herramientas utilizadas</p>
-
-                    <div>
-                        <img src="images/html5.png" alt="logo html5" class='logos-card' />
-                        <img src="images/ps.png" alt="logo photoshop" class='logos-card' />
-                        <img src="images/ps.png" alt="logo photoshop" class='logos-card' />
-                    </div>
-
-                </div>
-                <a class="recuadro" href="#Portfolio">
+          <!-- <a class="recuadro" href="#Portfolio">
                     <img src="images/memes.png" alt="memes" width="100%" />
                     Generador de memes</a>
 
@@ -203,120 +256,171 @@
 
                 <a class="recuadro" href="#Portfolio">
                     <img src="images/apoyo.png" alt="diseños" width="80%" />
-                    Design</a>
+                    Design</a> -->
+                    
+        <!-- </article> -->
+      </section>
 
-            </article>
-        </section>
-    </main>
-
-    <section id="Contacto" class="contactame_escribime">
+      <section id="Contacto" class="contactame_escribime">
         <div class="contacto">
-            <div class="ContactameEscribime">
-                <div class="contactame">
-                    <h1>Contactame</h1>
-                    <p>
-                        Si te interesa conocer más sobre mí, visitá mis redes sociales, o
-                        completá el fomulario y a la brevedad me estaré comunicando con
-                        vos
-                    </p>
+          <div class="ContactameEscribime">
+            <div class="contactame">
+              <h1>Contactame</h1>
+              <p>
+                Si te interesa conocer más sobre mí, visitá mis redes sociales,
+                o completá el fomulario y a la brevedad me estaré comunicando
+                con vos
+              </p>
 
-                    <ul class="enlaces_contactos">
-                        <li>
-                            <a class="enlace twiter" href="https://twitter.com/AnyiGP" aria-label="Twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                                @AnyiGP</a>
-                        </li>
+              <ul class="enlaces_contactos">
+                <li>
+                  <a
+                    class="enlace twiter"
+                    href="https://twitter.com/AnyiGP"
+                    aria-label="Twitter"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                    @AnyiGP</a
+                  >
+                </li>
 
-                        <li>
-                            <a class="enlace discord" href="https://www.discordapp.com" aria-label="Discord">
-                                <i class="fa-brands fa-discord"></i>
-                                Anyi#8510</a>
-                        </li>
+                <li>
+                  <a
+                    class="enlace discord"
+                    href="https://www.discordapp.com"
+                    aria-label="Discord"
+                  >
+                    <i class="fa-brands fa-discord"></i>
+                    Anyi#8510</a
+                  >
+                </li>
 
-                        <li>
-                            <a class="enlace linkedin"
-                                href="https://www.linkedin.com/in/%C3%A1ngeles-godoy-principiano-6a0445235/"
-                                aria-label="Linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                Angeles Godoy</a>
-                        </li>
+                <li>
+                  <a
+                    class="enlace linkedin"
+                    href="https://www.linkedin.com/in/%C3%A1ngeles-godoy-principiano-6a0445235/"
+                    aria-label="Linkedin"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    Angeles Godoy</a
+                  >
+                </li>
 
-                        <li>
-                            <a class="enlace GitHub" href="https://github.com/" aria-label="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                                AnyiGP</a>
-                        </li>
+                <li>
+                  <a
+                    class="enlace GitHub"
+                    href="https://github.com/"
+                    aria-label="GitHub"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    AnyiGP</a
+                  >
+                </li>
 
-                        <li>
-                            <address>
-                                <a class="enlace mail" href="mailto:angelesgp31@hotmail.com" aria-label="Enviar mail">
-                                    <i class="fa-solid fa-envelope"></i>angelesgp31@hotmail.com</a>
-                            </address>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--FORMULARIO----------------->
-
-                <div class="ContenedorEscribime">
-                    <h1>Escribime</h1>
-                    <form class="formulario">
-                        <div class="NombreApellido">
-                            <div class="Nombre">
-                                <label for="Nombre">Nombre*</label>
-                                <input type="text" id="Nombre" size="35" placeholder="p. ej.:Nombre" />
-                            </div>
-                            <div class="Apellido">
-                                <label for="Apellido">Apellido*</label>
-                                <input type="text" id="Apellido" size="35" placeholder="p. ej.: Apellido" />
-                            </div>
-                        </div>
-                        <div class="E-Mail">
-                            <label for="E-Mail">E-Mail*</label>
-                            <input type="email" id="E-Mail" size="35" placeholder="p. ej.: angeles@angeles.com" />
-                        </div>
-
-                        <div class="Mensaje">
-                            <label for="Mensaje">Mensaje*</label>
-                            <input type="text" id="Mensaje" size="35" placeholder="Escribe tu mensaje aquí" />
-                        </div>
-                    </form>
-
-                    <p>
-                        <a class="enviar" href="angelesgp31@hotmail.com" aria-label="Enviar">Enviar</a>
-                    </p>
-                </div>
+                <li>
+                  <address>
+                    <a
+                      class="enlace mail"
+                      href="mailto:angelesgp31@hotmail.com"
+                      aria-label="Enviar mail"
+                    >
+                      <i class="fa-solid fa-envelope"></i
+                      >angelesgp31@hotmail.com</a
+                    >
+                  </address>
+                </li>
+              </ul>
             </div>
+
+            <!--FORMULARIO----------------->
+
+            <div class="ContenedorEscribime">
+              <h1>Escribime</h1>
+              <form class="formulario">
+                <div class="NombreApellido">
+                  <div class="Nombre">
+                    <label for="Nombre">Nombre*</label>
+                    <input
+                      type="text"
+                      id="Nombre"
+                      size="35"
+                      placeholder="p. ej.:Nombre"
+                    />
+                  </div>
+                  <div class="Apellido">
+                    <label for="Apellido">Apellido*</label>
+                    <input
+                      type="text"
+                      id="Apellido"
+                      size="35"
+                      placeholder="p. ej.: Apellido"
+                    />
+                  </div>
+                </div>
+                <div class="E-Mail">
+                  <label for="E-Mail">E-Mail*</label>
+                  <input
+                    type="email"
+                    id="E-Mail"
+                    size="35"
+                    placeholder="p. ej.: angeles@angeles.com"
+                  />
+                </div>
+
+                <div class="Mensaje">
+                  <label for="Mensaje">Mensaje*</label>
+                  <input
+                    type="text"
+                    id="Mensaje"
+                    size="35"
+                    placeholder="Escribe tu mensaje aquí"
+                  />
+                </div>
+              </form>
+
+              <p>
+                <a
+                  class="enviar"
+                  href="angelesgp31@hotmail.com"
+                  aria-label="Enviar"
+                  >Enviar</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
     <footer>
-        <div class="enlaces">
-            <p><a href="#Hola">Hola</a></p>
-            <p><a href="#Conocimientos">Conocimientos</a></p>
-            <p><a href="#Proyectos">Proyectos</a></p>
-            <p><a href="Contacto" aria-label="Contactame">Contacto</a></p>
-        </div>
-        <div class="iconos">
-            <a href="https://twitter.com/AnyiGP" aria-label="Twitter">
-                <i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.discordapp.com" aria-label="Discord">
-                <i class="fa-brands fa-discord"></i></a>
-            <a href="https://www.linkedin.com/in/%C3%A1ngeles-godoy-principiano-6a0445235/" aria-label="Linkedin"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:angelesgp31@hotmail.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <div class="mensaje_final">
-            <p>Hecho con amor <span>❤</span></p>
-        </div>
+      <div class="enlaces">
+        <p><a href="#Hola">Hola</a></p>
+        <p><a href="#Conocimientos">Conocimientos</a></p>
+        <p><a href="#Proyectos">Proyectos</a></p>
+        <p><a href="Contacto" aria-label="Contactame">Contacto</a></p>
+      </div>
+      <div class="iconos">
+        <a href="https://twitter.com/AnyiGP" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.discordapp.com" aria-label="Discord">
+          <i class="fa-brands fa-discord"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/%C3%A1ngeles-godoy-principiano-6a0445235/"
+          aria-label="Linkedin"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/" aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:angelesgp31@hotmail.com" aria-label="Mail"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <div class="mensaje_final">
+        <p>Hecho con amor <span>❤</span></p>
+      </div>
     </footer>
-
-
-
-
-
-
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>

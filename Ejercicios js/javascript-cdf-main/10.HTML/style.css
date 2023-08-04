@@ -158,6 +158,11 @@ section h3 {
 /*************
 CONOCIMIENTOS
 *************/
+.tablas {
+  border: none;
+  width: 80%;
+  align-items: center;
+}
 
 .contenedor2 {
   width: 100%;
@@ -279,7 +284,6 @@ PROYECTOS
   justify-content: center;
   flex-direction: column;
 }
-
 
 .recuadro:hover {
   border: 1px solid #8840c7;
