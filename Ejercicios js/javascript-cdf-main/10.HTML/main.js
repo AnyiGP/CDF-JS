@@ -55,9 +55,7 @@ const mostarCards = arrayDeObj.map((arrayDeObj) => {
     />
     ${arrayDeObj.titulo}</a
   >
-
   <p>${arrayDeObj.descripcion}</p>
- 
   <div>
     <img src=${arrayDeObj.iconos[0]} alt="logo html5" class="logos-card" />
     <img
@@ -75,4 +73,14 @@ const mostarCards = arrayDeObj.map((arrayDeObj) => {
 `;
 });
 
+const setCards = () => {
+  if (divProyectos.style.display === "none") {
+    divProyectos.style.display = "flex";
+  } else {
+    divProyectos.style.display = "none";
+  }
+};
+
+const btn = document.querySelector(".btn-m-o");
+btn.addEventListener("click", setCards);
 // para los iconos obtener el
