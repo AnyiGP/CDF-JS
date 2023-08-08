@@ -1,5 +1,5 @@
-const divProyectos = document.querySelector("#Proyectos");
-console.log(divProyectos)
+const divProyectos = document.querySelector("#proyecto");
+console.log(divProyectos);
 const IJS = "images/html5.png";
 const IHTML = "images/ps.png";
 const ICSS = "images/ps.png";
@@ -46,8 +46,7 @@ const arrayDeObj = [
 
 const mostarCards = arrayDeObj.map((arrayDeObj) => {
   divProyectos.innerHTML += `
-<article class="contenedor3">
-<div class="recuadro">
+  <div class="recuadro">
   <a class="recuadro2" href="#Portfolio">
     <img
       src=${arrayDeObj.img}
@@ -73,7 +72,6 @@ const mostarCards = arrayDeObj.map((arrayDeObj) => {
     />
   </div>
 </div>
-</article>
 `;
 });
 
