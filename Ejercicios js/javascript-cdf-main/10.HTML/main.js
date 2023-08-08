@@ -84,3 +84,16 @@ const setCards = () => {
 const btn = document.querySelector(".btn-m-o");
 btn.addEventListener("click", setCards);
 // para los iconos obtener el
+
+///////////////////////////chat boot///////////////////////////////
+const input = document.querySelector("#mensaje-human")
+const div = document.querySelector("#pregunta")
+const btnEnviar = document.querySelector("#btn-enviar")
+
+btnEnviar.addEventListener("click", e => {
+  let text = input.value
+  let parrafo = document.createElement("p")
+parrafo.textContent = text
+div.appendChild(parrafo)
+input.value = ""
+})

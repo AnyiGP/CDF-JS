@@ -310,6 +310,23 @@ PROYECTOS
 }
 
 /**********
+CHAT-BOT
+************/
+.contenedor-chat {
+  width: 20%;
+  height: auto;
+  margin: 1em;
+  padding: 1em;
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+/**********
 CONTACTO
 ************/
 .contactame_escribime {
@@ -391,7 +408,7 @@ CONTACTO
   box-shadow: 0em 0em 1em 0em #8fdbd1;
 }
 
-/****formulario***/
+/****formulario*****/
 
 .ContenedorEscribime {
   margin: 3em;
