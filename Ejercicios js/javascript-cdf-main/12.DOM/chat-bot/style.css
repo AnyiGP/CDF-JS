@@ -1,0 +1,18 @@
+.text-final{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.text-center{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.resp-bot{
+    color:blue;
+    background-color: red;
+}
