@@ -1,9 +1,8 @@
 //**Ejercicio 1:** Crea una página web con dos inputs: uno para ingresar el nombre de usuario y otro para la edad. Al hacer clic en un botón "Guardar", almacena estos datos en Local Storage.
 
-//1-agarrar el valor que el usuario pune en el input
+//1-agarrar el valor que el usuario pone en el input
 
 let user = [];
-
 console.log(user);
 
 let userJSON = JSON.stringify(user);
