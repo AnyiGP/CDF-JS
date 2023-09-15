@@ -10,6 +10,6 @@ const calcularAreaCirculo = (radio) => {
     return PI * Math.pow(radio, 2) 
 }
 
-console.log(calcularAreaCirculo())
+console.log(calcularAreaCirculo(2))
 
 export {PI, calcularAreaCirculo}

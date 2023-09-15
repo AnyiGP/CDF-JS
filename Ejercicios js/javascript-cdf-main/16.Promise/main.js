@@ -5,11 +5,11 @@ console.log(nombre)
 // Creación de una promesa
 const miPromesa = new Promise((resolve, reject) => {
     // Lógica asíncrona
-    if (/* éxito */ ) {
-      resolve('¡Operación exitosa!');
-    } else {
-      reject('Hubo un error.');
-    }
+    // if (/* éxito */ ) {
+    //   resolve('¡Operación exitosa!');
+    // } else {
+    //   reject('Hubo un error.');
+    // }
   });
   
   // Consumo de la promesa
