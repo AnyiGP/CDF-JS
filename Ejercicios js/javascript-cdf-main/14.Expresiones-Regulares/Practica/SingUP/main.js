@@ -13,7 +13,7 @@ const user = document.getElementById("user");
 const password = document.getElementById("password"); 
 const email = document.getElementById("email");
 
-//1.2 creo expresiones para validad cada uno de los campos
+//1.2 creo expresiones para validad cada uno de los campos 
 
 const expresion = {
   nombre: /^[a-zA-z]{4,20}$/, //Debe validar nombre completo del usuario (no puede contener caracteres especiales o numeros)
